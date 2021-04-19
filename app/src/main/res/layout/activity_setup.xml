@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetupActivity"
+    android:background="@drawable/splash_photo">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setup_profile_image"
+        android:layout_width="0dp"
+        android:layout_height="193dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <EditText
+        android:id="@+id/setup_username"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/inputs"
+
+        android:drawableLeft="@drawable/username"
+        android:hint="username"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/setup_information_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41000003" />
+
+    <EditText
+        android:id="@+id/setup_full_name"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/inputs"
+
+        android:drawableLeft="@drawable/name"
+        android:hint="Full name"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <EditText
+        android:id="@+id/setup_country"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/inputs"
+
+        android:drawableLeft="@drawable/country"
+        android:hint="Country"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/setup_full_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <Button
+        android:id="@+id/setup_information_button"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button"
+        android:text="Save"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

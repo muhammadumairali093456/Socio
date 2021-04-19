@@ -5,58 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/splash_photo"
-    tools:context=".MainActivity">
+    tools:context=".ClickPostActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="338dp"
-        android:layout_height="138dp"
+        android:id="@+id/click_post_image"
+        android:layout_width="373dp"
+        android:layout_height="289dp"
 
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/socio"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="137dp"
-
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/descrip" />
+        app:layout_constraintVertical_bias="0.097"
+        app:srcCompat="@drawable/select_image" />
 
-    <ImageView
-        android:id="@+id/imageView5"
+    <TextView
+        android:id="@+id/click_post_description"
         android:layout_width="match_parent"
-        android:layout_height="76dp"
+        android:layout_height="wrap_content"
 
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:scaleType="centerCrop"
+        android:background="@drawable/inputs"
+        android:padding="15dp"
+        android:text="Post Description"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/continue_btn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.641"
-        app:srcCompat="@drawable/desc2" />
+        app:layout_constraintVertical_bias="0.57" />
 
     <Button
-        android:id="@+id/continue_btn"
+        android:id="@+id/edit_post_button"
         android:layout_width="0dp"
         android:layout_height="49dp"
 
@@ -64,12 +54,32 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button"
-        android:text="Continue"
-        android:textSize="20sp"
+        android:text="Edit Post"
+        android:textColor="@color/black"
+        android:textSize="18sp"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView4" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
 
+    <Button
+        android:id="@+id/delete_post_button"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button"
+        android:text="Delete Post"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
